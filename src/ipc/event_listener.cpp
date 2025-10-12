@@ -203,7 +203,7 @@ void WorkerThread()
             {
                 if (Global::Keycode - '0' <= Global::CandidateWordList.size())
                 {
-                    int index = Global::Keycode - '0';
+                    int index = Global::Keycode - '1';
                     Global::SelectedCandidateString = Global::CandidateWordList[index];
                     DictionaryUlPb::WordItem curWordItem = Global::CandidateList[index];
                     std::string curWordPinyin = std::get<0>(curWordItem);
