@@ -36,6 +36,14 @@ inline std::unordered_set<WCHAR> PUNC_SET = {
     L'>',  //
     L'?'   //
 };
+
+//
+// 给造词使用
+//
+inline std::string preedit_during_creating_word = "";
+inline std::string pinyin_for_creating_word = "";
+inline std::string word_for_creating_word = "";
+inline bool is_during_creating_word = false;
 } // namespace GlobalIme
 
 namespace CandidateUi
